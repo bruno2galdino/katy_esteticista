@@ -1,0 +1,513 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #333;
+    padding: 15px 30px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Header / Hero Section */
+.hero-section {
+    background-image: url('https://images.assets-landingi.com/lbbc0Cb5/BG1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.slogan {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.discount-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 400px;
+    gap: 20px;
+}
+
+.discount-percentage {
+    font-size: 72px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1;
+}
+
+.discount-text {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    flex: 1;
+}
+
+/* Quality Section */
+.quality-section {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 24px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.quality-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.quality-text h3 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.quality-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.quality-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.quality-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quality-description p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background-image: url('https://images.assets-landingi.com/bcPaacZa/BG2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.about-image {
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Experts Section */
+.experts-section {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.experts-section h2 {
+    font-size: 24px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.experts-section h3 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.experts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.expert-card {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.expert-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.expert-card h4 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.expert-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Service Section */
+.service-section {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.service-section h2 {
+    font-size: 24px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.service-section h3 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.service-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Products Section */
+.products-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+.footer-section {
+    padding: 80px 0;
+    background-image: url('https://images.assets-landingi.com/1eb1uKf6/BG3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
+
+.footer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-discount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #fff;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 400px;
+    gap: 20px;
+    color: #333;
+}
+
+.footer-content h2 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input:focus {
+    outline: none;
+    background-color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    
+    .discount-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .discount-percentage {
+        font-size: 48px;
+    }
+    
+    .quality-content,
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .experts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    section {
+        padding: 60px 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+    
+    .discount-percentage {
+        font-size: 36px;
+    }
+    
+    .about-text h3,
+    .service-section h3,
+    .footer-content h2 {
+        font-size: 24px;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
