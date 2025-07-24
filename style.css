@@ -11,7 +11,7 @@ body {
     color: #333;
 }
 
-.container {
+.hero-section .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -498,10 +498,10 @@ body {
 .cta-section {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     min-height: 100vh;
-    padding: 80px 0;
+    padding: 80px;
     background-image: url('assets/background-contato.png');
     background-size: cover;
     background-position: center;
@@ -511,7 +511,7 @@ body {
 
 .cta-section .container {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     flex-direction: column;
 }
@@ -530,6 +530,11 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.cta-section .container p{
+    color: rgb(105, 105, 105);
+    margin-bottom: 20px;
+}
+
 .cta-section .container a img {
     width: 24px;
     height: 24px;
@@ -540,7 +545,7 @@ body {
     font-size: 36px;
     color: #ffffff;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 
