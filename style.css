@@ -55,7 +55,7 @@ body {
 
 /* Header / Hero Section */
 .hero-section {
-    background-image: url('https://images.assets-landingi.com/lbbc0Cb5/BG1.png');
+    background-image: url('assets/BG1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -401,7 +401,7 @@ body {
 /* Footer Section */
 .footer-section {
     padding: 80px 0;
-    background-image: url('https://images.assets-landingi.com/1eb1uKf6/BG3.png');
+    background-image: url('assets/BG3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -417,12 +417,12 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.288);
 }
 
 .footer-section .container {
     display: flex;
-    height: 500px;
+    min-height: 100vh;
     align-items: center;
 }
 
@@ -454,7 +454,96 @@ body {
     line-height: 1.2;
 }
 
+/* Maps Session */
+
+.map-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-direction: column;
+}
+
+.map-section .container-map {
+    width: 100%;
+    height: 100vh; 
+    padding: 40px;
+    padding-bottom: 150px;
+}
+
+.map-section h2,
+.map-section p {
+    margin: 10px auto 10px;
+    padding: 0 20px;
+
+}
+
+.map-container {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    /* border: 0; */
+    display: block;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.250);
+}
+
 /* Contact Form */
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 0;
+    background-image: url('assets/background-contato.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.cta-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cta-section .container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-section .container a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.cta-section h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
 .contact-form {
     max-width: 400px;
     margin: 0 auto;
